@@ -1,0 +1,11 @@
+.app {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.panel {
+    padding: 1.5625rem;
+    background-color: #4a803d;
+    border-radius: 1rem;
+    color: #fff;
+}
