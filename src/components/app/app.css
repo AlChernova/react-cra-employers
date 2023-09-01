@@ -5,7 +5,7 @@
 
 .panel {
     padding: 1.5625rem;
-    background-color: #4a803d;
+    background-color: var(--colorPrimary);
     border-radius: 1rem;
     color: #fff;
 }

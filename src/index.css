@@ -1,3 +1,10 @@
+:root {
+  --colorPrimary: #4a803d;
+  --colorWarning: #e09f3e;
+  --colorWarning-2: #FFD700;
+  --colorDanger: #e5383b;
+}
+
 body {
   margin: 50px 0;
   font-family: 'Georgia', 'Roboto', sans-serif;
