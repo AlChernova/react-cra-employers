@@ -14,7 +14,7 @@ const EmployersList = ({data}) => {
     }) 
 
     return (
-        <ul className="app-list panel list-group">
+        <ul className="app-list list-group">
             {elements}
         </ul>
     );

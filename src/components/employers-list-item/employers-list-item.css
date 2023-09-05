@@ -1,6 +1,6 @@
 .list-group-item {
     padding: 1rem;
-    border-bottom: 1px solid var(--colorPrimary);
+    border-bottom: 1px solid #ccc;
 }
 
 .list-group-item:last-child {
