@@ -20,6 +20,10 @@ class App extends Component {
             ]
         }
     }
+
+    deleteItem = (id) => {
+        console.log(id);
+    }
     
     render() {
         return (
@@ -30,7 +34,7 @@ class App extends Component {
                     <SearchPanel></SearchPanel>
                     <AppFilter></AppFilter>
                 </div>
-                <EmployersList data={this.state.data} onDelete={id => console.log(id)} />
+                <EmployersList data={this.state.data} onDelete={this.deleteItem} />
                 <EmployersAddForm/>
             </div>
         );
