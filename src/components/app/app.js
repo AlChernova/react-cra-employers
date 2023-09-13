@@ -23,8 +23,27 @@ class App extends Component {
 
     deleteItem = (id) => {
         this.setState(({data}) => {
-            const index = data.findIndex(elem => elem.id === id);
-            console.log(index);
+            // console.log(index);
+            /* соблюдаем неизменяемость данных.*/
+            
+            // спосолб 1. 
+            // находим индекс нужного эл-та в массиве
+            // const index = data.findIndex(elem => elem.id === id);
+            // копируем часть массива от начала до искомого элемента 
+            // const before = data.slice(0, index);
+            // копируем часть массива начиная с элемента после искомого и до конца
+            // const after = data.slice(index + 1); 
+            // таким образом искомый элемент выпадает
+            // объединяем эти массивы
+            // const newArr = [...before, ...after];
+
+            // способ 2.
+            // фильтруем массив: все элементы кроме нужного
+            const newArr = data.filter(item => item.id !== id);
+
+            return {
+                data: newArr
+            }
         });
     }
     
